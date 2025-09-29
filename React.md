@@ -20,3 +20,19 @@ React updates only the parts of the UI that change, improving performance and us
 ```jsx
 const element = <h1>Hello, React!</h1>;
 ```
+
+---
+
+## 3. What is Component? 
+- A **Component** is a reusable, independent piece of UI.  
+- It can be a **function** or a **class** that returns JSX.  
+- Components must follow **PascalCase naming convention** (e.g., `MyComponent`).  
+
+**Example:**
+```jsx
+function Welcome() {
+  return <h2>Welcome to React!</h2>;
+}
+
+export default Welcome;
+```
