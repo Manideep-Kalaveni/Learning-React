@@ -36,3 +36,20 @@ function Welcome() {
 
 export default Welcome;
 ```
+
+---
+
+## 4. What is Fragment?
+- A **Fragment** allows grouping multiple elements without adding extra DOM nodes (like an extra ```<div>```)
+- Useful when you want to return multiple sibling elements
+
+**Example:**
+```jsx
+function App(){
+    return 
+    <>
+        <h1> Hi </h1>
+        <p> This is inside Fragment </p>
+    </>
+}
+``` 
