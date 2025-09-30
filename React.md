@@ -46,10 +46,55 @@ export default Welcome;
 **Example:**
 ```jsx
 function App(){
-    return 
-    <>
-        <h1> Hi </h1>
-        <p> This is inside Fragment </p>
-    </>
+    return (  
+        <>
+            <h1> Hi </h1>
+            <p> This is inside Fragment </p>
+        </>
+    );
 }
 ``` 
+
+---
+
+## 5. What is Props?
+- **Props** = **Properties**
+- Used to **pass data from Parent to Child** components
+- Props are **immutable** (read-only inside child components)
+
+**Example:**
+```jsx
+function Greeting(props){
+    return <p> Hello, {props.name}! </p>;
+}
+
+function App(){
+    return (
+        <div>
+            <Greeting name = "Manideep" />
+            <Greeting name = "React Learner" />
+        </div>
+    );
+}
+```
+
+---
+
+## 6. What is Guard Operator?
+- The **Guard Operator(&&)** in React is used to **conditionally render** components
+- If the condition is ```true```, the **JSX** after ```(&&)``` is displayed
+- If the condition is ```false```, React ignores it (renders nothing).
+
+**Example:**
+```jsx
+function App(){
+    const isLoggedIn = true;
+
+    return (
+        <div>
+            <h2> Hello! </h2>
+            {isLoggedIn && <p> You are a logged in ✅</p>}
+        </div>
+    )
+}
+```
