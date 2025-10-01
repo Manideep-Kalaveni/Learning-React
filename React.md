@@ -98,3 +98,25 @@ function App(){
     )
 }
 ```
+
+---
+
+## 7. What is State & useState Hook?
+- **State** is a way to store and manage changing data in a component.  
+- Unlike props, state is **local** to a component and can be updated.  
+- `useState` is a React Hook that lets you add state to functional components.  
+
+**Example:**
+```jsx
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
+  );
+}
