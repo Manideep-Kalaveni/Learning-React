@@ -120,3 +120,23 @@ function Counter() {
     </div>
   );
 }
+```
+---
+
+## 8. What is Event Handling in React?
+- An **event** is an action that user performs on the web page
+- Examples: **Clicking a button, typing in an input, submitting a form, hovering over text**
+- In React, events are similar to JavaScript DOM events but have some differences:
+    - Written in **camelCase**(`onClick` not `onclick`)
+    - You pass a **function** instead of string
+
+**Example:**
+```jsx
+function App() {
+  return (
+    <button onClick={() => alert("Button Clicked 🚀")}>
+      Click Me
+    </button>
+  );
+}
+```
